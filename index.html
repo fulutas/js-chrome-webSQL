@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Chrome WebSQL</title>
+    <style>
+        * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+
+        .container button {
+            padding: 10px;
+            margin: 15px;
+            background-color: orange;
+        }
+
+        .buttonList {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="text-align: center;">Javascript Chrome WebSQL Test</h3>
+        <div class="buttonList">
+            <button onclick="createTable()">Tablo Oluştur</button>
+            <button onclick="createRecord()">Kayıt Oluştur</button>
+            <button onclick="readRecords()">Kayıtları Oku</button>
+            <button onclick="readRecordsByID(2)">Kayıtları Oku ID ile </button>
+            <button onclick="deleteRecordByID(1)">Kayıtları ID ile Sil </button>
+            <button onclick="updateRecordByID(2)">Kaydı ID ile Güncelle </button>
+        </div>
+        <p style="text-align: center;">Console.log kayıt atar.</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
